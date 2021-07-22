@@ -1,0 +1,58 @@
+.section__carousel {
+  width: 100%;
+  background-image: url(../../images/Violet_top_left_wave.png);
+  background-size: cover;
+  // background-position: center;
+  box-sizing: border-box;
+  position: relative;
+  .carousel__listItem {
+    .carousel__list {
+      display: flex;
+      justify-content: space-around;
+      .carousel__item {
+        background-color: $color-white;
+        margin: 20px 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        .carousel__image {
+          img {
+            width: 100%;
+            // transform: scale(1);
+            // // background-size: cover;s
+            // background-position: center;
+            &:hover {
+              transform:  scale(1.1);
+              transition: all 1s;
+            }
+          }
+        }
+        .carousel__content {
+          p:first-child {
+            @include styleText($fs-2, $fs-4, $color-purple);
+            text-align: center;
+            margin-top: 20px;
+          }
+          h2 {
+            @include styleText($fs-10, $fw-7, $color-black);
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          p:last-child {
+            @include styleText($fs-2, $fs-4, $color-black);
+            text-align: center;
+            // margin-bottom: 20px;
+          }
+        }
+        &:hover {
+          box-shadow: 0 30px 20px rgba(33, 33, 33, 0.2);
+          transition: all 0.5s;
+        }
+      }
+    }
+    .carousel__bottomImage {
+      position: absolute;
+      top: 20%;
+      height: 100px;
+    }
+  }
+}

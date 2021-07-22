@@ -1,0 +1,18 @@
+.section__about {
+  .about__content {
+    .section__aboutContent {
+      margin: 100px 0;
+      p {
+        @include styleText($fs-3, $fw-6, $color-purple);
+      }
+      h1 {
+        @include styleText($fs-4, $fw-7, $color-black);
+      }
+    }
+    .section__aboutImage {
+      position: absolute;
+      left: 50%;
+      top: 10%;
+    }
+  }
+}

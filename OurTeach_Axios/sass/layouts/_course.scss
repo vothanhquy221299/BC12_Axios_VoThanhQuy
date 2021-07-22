@@ -1,0 +1,94 @@
+.section__contact {
+  margin-top: 150px;
+  background-image: url(../../images/accent_bottom_wave_01.png);
+  background-position: center;
+  background-size: cover;
+  .section__contactContent {
+    .contactImage {
+    }
+    .contactForm {
+      .formContact {
+        width: 400px;
+        margin-left: 100px;
+        h1 {
+          @include styleText($fs-11, $fw-7, $color-black);
+          margin: 20px 0 40px 0;
+          text-align: center;
+        }
+        .row {
+          .formUser {
+            
+            i {
+              position: absolute;
+              top: 30%;
+              left: 15%;
+              color: $color-purple;
+            }
+            input {
+              position: relative;
+              padding-left: 40px;
+              border-radius: 50px;
+              height: 45px;
+              @include styleText($fs-9, $fw-4, $color-black);
+            }
+          }
+          .formEmail {
+            i {
+              position: absolute;
+              top: 30%;
+              left: 15%;
+              color: $color-purple;
+            }
+            input {
+              position: relative;
+              padding-left: 40px;
+              border-radius: 50px;
+              height: 45px;
+              @include styleText($fs-9, $fw-4, $color-black)
+            }
+          }
+        }
+        .formCourse {
+          position: relative;
+          margin-top: 20px;
+          i {
+            position: absolute;
+            top: 30%;
+            left: 3%;
+            color: $color-purple;
+          }
+          select {
+            padding-left: 40px;
+            border-radius: 50px;
+            height: 45px;
+            @include styleText($fs-9, $fw-4, $color-black)
+          }
+        }
+        .formMessage {
+          position: relative;
+          i {
+            position: absolute;
+            top: 10%;
+            left: 3%;
+            color: $color-purple;
+          }
+          textarea {
+            padding-left: 40px;
+            border-radius: 25px;
+            @include styleText($fs-9, $fw-4, $color-black)
+          }
+        }
+        button{
+            @include buttonStyle($color-purple, 0, $bdr-1);
+            @include styleText($fs-9, $fw-7, $color-white);
+            height: 45px;
+            width: 150px;
+            margin: 30px 0;
+            &:hover{
+                @include buttonStyle($color-white, 0, $bdr-1);
+            }
+        }
+      }
+    }
+  }
+}

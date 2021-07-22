@@ -1,0 +1,21 @@
+//Import theo thứ tự
+//1. _helpers: biến trước
+@import './helps/variables';
+@import './helps/mixin';
+
+//2. vender
+
+//3. base
+@import './base/reset';
+
+//4. components
+
+//5. layouts
+@import './layouts/header';
+@import './layouts/about';
+@import './layouts/carousel';
+@import './layouts/footer';
+@import './layouts/course';
+//6. pages
+
+//7. themes

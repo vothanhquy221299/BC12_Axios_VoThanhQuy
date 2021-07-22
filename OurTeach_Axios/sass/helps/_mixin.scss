@@ -1,0 +1,20 @@
+@mixin styleText($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+@mixin buttonStyle($bg, $bd, $bdr) {
+    background-color: $color-purple;
+    border: $bd;
+    border-radius: $bdr;
+}
+@mixin responsive($screen){
+    @if(map-has-key($map: $breakpoints, $key: $screen)){
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value){
+            @content; //những gì viết trong hàm sẽ ở trong media query
+        }
+    } @else {
+        @error 'Screen does not exist!'
+    }
+}

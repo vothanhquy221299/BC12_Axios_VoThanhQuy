@@ -1,0 +1,84 @@
+footer {
+  background-image: url(../../images/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  .footer__content {
+    padding-top: 120px;
+    .footer__contact {
+      h2 {
+        @include styleText($fs-10, $fw-7, $color-white);
+      }
+      .footer__list {
+          margin-top: 30px;
+        p {
+          @include styleText($fs-2, $fs-6, $color-white);
+          margin-bottom: 10px;
+          span {
+            padding-left: 10px;
+          }
+          a{
+              text-decoration: none;
+            i{
+                color: $color-white;
+                padding: 0 5px;
+                &:hover{
+                    color: $color-black;
+                    transition: all 0.5s;
+                }
+          }
+          }
+        }
+      }
+    }
+    .footer__links{
+        h2{
+          @include styleText($fs-10, $fw-7, $color-white);
+        }
+        .footer__list{
+            margin-top: 30px;
+            a{
+                text-decoration: none;
+                color: $color-white;
+                @include styleText($fs-2, $fs-6, $color-white);
+            }
+        }
+    }
+    .footer__about{
+        h2{
+            @include styleText($fs-10, $fw-7, $color-white);
+          }
+          .footer__list{
+              margin-top: 30px;
+              a{
+                  text-decoration: none;
+                  color: $color-white;
+                  @include styleText($fs-2, $fs-6, $color-white);
+              }
+          }
+    }
+    .footer__newsletter{
+        h2{
+            @include styleText($fs-10, $fw-7, $color-white);
+          }
+        .footer__form{
+            margin-top: 30px;
+            input{
+                background-color: $color-purple;
+                @include styleText($fs-2, $fs-6, $color-white);
+                border: 1px solid rgba(255, 255, 255, 0.425);
+                height: 45px;
+                border-radius: 50px;
+                text-align: center;
+            }
+            button{
+                @include buttonStyle($color-white, 0, $bdr-1);
+                color: $color-purple;
+                height: 45px;
+                width: 260px;
+                margin-top: 10px;
+            }
+        }
+    }
+  }
+}
